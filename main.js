@@ -1,8 +1,10 @@
 function myFunction() {
+  // x is the html element with id #myLinks
     var x = document.getElementById("myLinks");
-    if (x.style.display === "block") {
-      x.style.display = "none";
+    // if the element contains the class hideMobile remove it, otherwise add it
+    if (x.classList.contains("hideMobile")) {
+      x.classList.remove("hideMobile")
     } else {
-      x.style.display = "block";
+      x.classList.add("hideMobile");
     }
 }
